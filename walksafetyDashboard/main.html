@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>MIM | Walksafety</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Red+Hat+Display">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.20/c3.min.js" integrity="sha512-+IpCthlNahOuERYUSnKFjzjdKXIbJ/7Dd6xvUp+7bEw0Jp2dg6tluyxLs+zq9BMzZgrLv8886T4cBSqnKiVgUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+<nav id="menu"></nav>
+<div id="map"></div>
+<div class="map-overlay top" id='tabs'>
+    <fieldset class = "title">
+        <h1><a href="https://mim.institute"><img src = "./img/mimlogo.png" alt = "MIM institute"></a></h1><a href = "https://mim.institute" target="blank"><h2>보행사고 예측지도</h2></a>
+    </fieldset>
+    <div id="panel_chart"></div>
+    <div id="panel_fid"></div>
+    <div id="panel_int"></div>
+    <div id="panel_pedx"></div>
+    <div id="panel_szone"></div>
+    <div id="panel_nain"></div>
+    <div id="panel_nach"></div>
+    <div id="panel_pred"></div>
+<!--    <div class="map-overlay-inner">-->
+<!--        <div class="inner-wrap">-->
+<!--            <fieldset>-->
+<!--                <div id="panel_bld"></div>-->
+<!--                <div id="panel_int"></div>-->
+<!--            </fieldset>-->
+<!--        </div><div class="inner-wrap">-->
+<!--    </div>-->
+<!--    </div>-->
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

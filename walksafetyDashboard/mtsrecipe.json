@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "layers": {
+    "hello_world": {
+      "source": "mapbox://tileset-source/jihoonpark/bld",
+      "minzoom": 10,
+      "maxzoom": 13
+    }
+  }
+}
+
+//export MAPBOX_ACCESS_TOKEN= xxxxxxxxxxxxxxx
+//tilesets upload-source mapboxusername bld /dir/to/json
+//tilesets create mapboxusername.mtsrecipe --recipe /dir/to/mtsrecipe --name "mts recipe"
+//tilesets publish mapboxusername.mtsrecipe

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "layers": {
+    "hello_world": {
+      "source": "mapbox://tileset-source/jihoonpark/road",
+      "minzoom": 10,
+      "maxzoom": 13
+    }
+  }
+}
