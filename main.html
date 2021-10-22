@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <title>MIM | Walksafety</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Red+Hat+Display">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.1.1/d3.min.js" integrity="sha512-COTaPOlz12cG4fSfcBsxZsjauBAyldqp+8FQUM/dZHm+ts/jR4AFoJhCqxy8K10Jrf3pojfsbq7fAPTb1XaVkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js" integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.1/papaparse.min.js" integrity="sha512-EbdJQSugx0nVWrtyK3JdQQ/03mS3Q1UiAhRtErbwl1YL/+e2hZdlIcSURxxh7WXHTzn83sjlh2rysACoJGfb6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+</head>
+
+<body>
+<nav id="menu"></nav>
+<div id="map"></div>
+<div class="map-overlay top" id='tabs'>
+  <fieldset class = "title">
+    <h1><a href="https://mim.institute"><img src = "./img/mimlogo.png" alt = "MIM institute"></a></h1><a href = "https://mim.institute" target="blank"><h2>보행사고 예측지도</h2></a>
+  </fieldset>
+  <canvas id="negChart"></canvas>
+  <script>
+    function load() {
+      console.log("Loaded event!");
+    }
+    window.onload = load;
+  </script>
+  <div id="panel_fid"></div>
+  <div id="panel_int"></div>
+  <div id="panel_pedx"></div>
+  <div id="panel_szone"></div>
+  <div id="panel_nain"></div>
+  <div id="panel_nach"></div>
+  <div id="panel_pred"></div>
+  <canvas id="negPredChart"></canvas>
+  <script>
+    function load() {
+      console.log("Loaded event!");
+    }
+    window.onload = load;
+  </script>
+  <!--    <div class="map-overlay-inner">-->
+  <!--        <div class="inner-wrap">-->
+  <!--            <fieldset>-->
+  <!--                <div id="panel_bld"></div>-->
+  <!--                <div id="panel_int"></div>-->
+  <!--            </fieldset>-->
+  <!--        </div><div class="inner-wrap">-->
+  <!--    </div>-->
+  <!--    </div>-->
+</div>
+<!--<canvas id="chart" width="400" height="400"></canvas>-->
+<script src="/scripttest3.js"></script>
+</body>
+</html>
